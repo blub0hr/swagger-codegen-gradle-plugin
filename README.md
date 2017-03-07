@@ -34,8 +34,8 @@ swagger {
             'dateLibrary'      : 'java8'
     ]
     systemProperties = [
-        'apis' : '',
-        'models' = ''
+        'apis'   : '',
+        'models' : ''
     ]
 }
 
@@ -97,6 +97,7 @@ the old behaviour had a custom plugin for this swagger config as seen below
 
 no substituion for:
 - `cleanOutputDir` - now, configured by configuring the task directly:
+    
     ```groovy
     tasks.getByName("swagger") {
         cleanOutputDir = false
